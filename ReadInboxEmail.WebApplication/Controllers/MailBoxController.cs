@@ -105,9 +105,9 @@ namespace ReadInboxEmail.WebApplication.Controllers
             JsonResult result = new JsonResult();
 
             EmailConfiguration email = new EmailConfiguration();
-            email.POPServer = "imap-mail.outlook.com";
+            email.POPServer = "";
             email.POPUsername = "isaacperez149@hotmail.com";
-            email.POPpassword = "IsaPere#149";
+            email.POPpassword = "";
             email.IncomingPort = "993";
             email.IsPOPssl = true;
 
