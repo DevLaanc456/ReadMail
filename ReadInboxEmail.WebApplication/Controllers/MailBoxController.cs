@@ -36,7 +36,7 @@ namespace ReadInboxEmail.WebApplication.Controllers
                 email.POPpassword =   //""; // type your password credential
                 email.IncomingPort = "993";
                 email.IsPOPssl = true;
-
+                 
 
                 int success = 0;
                 int fail = 0;
