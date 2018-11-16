@@ -31,9 +31,9 @@ namespace ReadInboxEmail.WebApplication.Controllers
             try
             {
                 EmailConfiguration email = new EmailConfiguration ();
-                email.POPServer = "imap-mail.outlook.com"; // type your popserver
-                email.POPUsername = "isaacperez149@hotmail.com"; // type your username credential
-                email.POPpassword = "IsaPere#149"; // type your password credential
+                email.POPServer = "";  //"imap-mail.outlook.com"; // type your popserver
+                email.POPUsername = "isaac.perez@multibank.com.pa"; // type your username credential
+                email.POPpassword =   //""; // type your password credential
                 email.IncomingPort = "993";
                 email.IsPOPssl = true;
 
@@ -46,7 +46,7 @@ namespace ReadInboxEmail.WebApplication.Controllers
                 int i = 1;
                 int msgcount = ic.GetMessageCount("INBOX");
                 int end = msgcount - 1;
-                int start = msgcount - 40;
+                int start = msgcount - 5;
                 // Note that you must specify that headersonly = false
                 // when using GetMesssages().
                 MailMessage[] mm = ic.GetMessages(start, end, false);
